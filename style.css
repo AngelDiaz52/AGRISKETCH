@@ -1,0 +1,40 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#app {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#sidebar {
+  width: 300px;
+  background: #e6f8e6;
+  border-right: 2px solid #3fa34d;
+  padding: 16px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  resize: horizontal;
+  min-width: 200px;
+  max-width: 500px;
+}
+
+#map {
+  flex-grow: 1;
+}
+
+#toggleSidebar {
+  position: absolute;
+  top: 10px;
+  left: 300px;
+  background: #000;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  z-index: 10;
+  cursor: pointer;
+}
